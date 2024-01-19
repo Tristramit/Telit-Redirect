@@ -14,9 +14,9 @@ def open_url_with_id():
         today_date = datetime.now().strftime("%Y-%m-%d")
 
         # Construct the URL using the provided ID and today's date
-        url = f"https://portal-de.telit.com/things/property/{user_id}/prop_temperature?start={today_date}+10%3A00%3A00&end={today_date}+23%3A59%3A59"
+        url = f"https://portal-de.telit.com/things/property/{user_id}/prop_temperature?start=2023-09-01+10%3A00%3A00&end={today_date}+23%3A59%3A59"
 
-        print(f"Opening URL: {url}")
+        
         # Open the URL in the default web browser
         webbrowser.open(url)
 
